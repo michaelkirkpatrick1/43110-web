@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html lang="en=us">
+<head>
+<meta charset="utf-8">
+<title>43110</title>
+<meta name="viewport"content= "width=divice-width, initial-scale=1.0">
+<meta name="keywords" content="">
+<meta name="description" content="">
+
+<link href="CSS/project.css" rel="stylesheet" type="text/css">
+<script src="js/menu.js"></script>
+
+<!--google fonts-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rock+3D&display=swap" rel="stylesheet">
+<link rel="shortcut icon" type="image/x-icon" href="/favicon (1).ico">
+
+
+</head>
+ 
+<body>
+  <!--java for slide show -->
+  <script>let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1} 
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block"; 
+      dots[slideIndex-1].className += " active";
+    }</script>
+    <header>
+  
+    <h1><a href="index.html">43110 </a></h1>
+
+    <!--wow slider nav bar-->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="blog.html">Blog</a>
+        <a href="gallary.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <div class="style">
+          
+        </div> 
+      </div>
+      <h1>Home base</h1>
+      <p>43110 is a step away from big social media, a space in which the creator holds all the tools. We have created this site in the hopes of sharing creative content on our terms for who ever cares to appreciate it. Run for and by a trusted team of upincoming creatives we hope that you enjoy your stay on our site, and remeber allways be innovating. As a team we use this space to write blog, posts share photos, and stay connected as we seek to shed light on our persective</p>
+    </header>
+    
+    
+    
+     <main>
+     <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="images/rado.JPG" style="width:100%">
+    <div class="text">Gallary</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="images/pinkjaps.JPG" style="width:100%">
+    <div class="text">Blog</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="images/treeshrooms.JPG" style="width:100%">
+    <div class="text">contact</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+
+
+   
+
+</main>
+</body>
+<footer>
+  <a href="mikekirk1400@gmail.com">mikekirk1400@gmail.com</a>
+  <a href="https://www.instagram.com/43110.gov_/">instagram</a>
+  <a href="https://form.jotform.com/221235437636051">Questions?</a>
+  
+
+</footer>
+
+
+
+
+
+
+</html>
